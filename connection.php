@@ -12,7 +12,9 @@ function getResult($select)
         $bdd = new PDO('mysql:host=' . $serveur . ';dbname=' . $dbname . '', $login, $password);
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
         $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-        var_dump('connection ok');
+//        var_dump('connection ok');
+//        echo 'Connexion établie';
+
     } catch (PDOException $e) {
         echo 'Connexion impossible';
     }

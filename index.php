@@ -14,9 +14,7 @@
         <div class="jumbotron">
             <h1>Révisions SQL</h1>
             <h2>Consignes pour réaliser les exercices</h2>
-            <?php
-            include('connection.php');
-            ?>
+
             <p>* Créer un fichier index.php et un fichier connexion php contenant une fonction GetResult effectuant une requète SELECT prenant en paramètre une variable $result </p>
 
             <p>* Pour chaque question, il s'agit de trouver la requête SQL permettant d'afficher le résultat énoncé.</p>
@@ -28,25 +26,174 @@
         <hr>
         <ul class="list-group">
             <li class="list-group-item"><b>1 -</b> Toute la table etudiants.</li>
+            <?php
+            include ("connection.php");
+            $reponse =  getResult('SELECT * FROM etudiants');
+
+            foreach ($reponse as $value) {
+                //
+                echo '<h4>  Numéro:'.$value -> num_etu.',    Nom :'.$value -> nom_etu.',    Date de naissance :'.$value -> date_naiss.', sexe :'.$value -> sexe.' </h4><br>';
+//
+            }
+
+            ?>
             <li class="list-group-item"><b>2 -</b> Nom, numéro et date de naissance des étudiants.</li>
+            <?php
+            $reponse =  getResult('SELECT nom_etu, num_etu, date_naiss FROM etudiants');
+            foreach ($reponse as $value) {
+                //
+                echo '<h4>  Nom:'.$value -> nom_etu.',    Numéro :'.$value -> num_etu.',    Date de naissance :'.$value -> date_naiss.'</h4><br>';
+//
+            }
+
+            ?>
+
             <li class="list-group-item"><b>3 -</b> Liste des étudiantes.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM etudiants WHERE sexe = "F"');
+
+            foreach ($reponse as $value) {
+                //
+                echo '<h4>  Numéro:'.$value -> num_etu.',    Nom :'.$value -> nom_etu.',    Date de naissance :'.$value -> date_naiss.', sexe :'.$value -> sexe.' </h4><br>';
+//
+            }
+            ?>
+
             <li class="list-group-item"><b>4 -</b> Liste des enseignants par ordre alphabétique des noms.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM enseignants ORDER BY nom_ens');
+
+            foreach ($reponse as $value) {
+                //
+                echo '<h4>   Nom Enseignant:'.$value -> nom_ens.'</h4><br>';
+//
+            }
+            ?>
+
             <li class="list-group-item"><b>5 -</b> Liste des enseignants par grade et par ordre alphabétique décroissant des noms.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM enseignants GROUP BY grade ORDER BY nom_ens');
+
+            foreach ($reponse as $value) {
+                //
+                echo '<h4>   grade:'.$value -> grade.', Nom Enseignant:'.$value -> nom_ens.'</h4><br>';
+//
+            }
+            ?>
+
             <li class="list-group-item"><b>6 -</b> Nom, grade et ancienneté des enseignants qui ont strictement plus de 2 ans d'ancienneté.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM enseignants WHERE anciennete > 2 GROUP BY grade ORDER BY nom_ens');
+
+            foreach ($reponse as $value) {
+                //
+                echo '<h4>   grade:'.$value -> grade.', Nom Enseignant:'.$value -> nom_ens.'</h4><br>';
+//
+            }
+            ?>
+
             <li class="list-group-item"><b>7 -</b> Nom, grade et ancienneté des maîtres de conférences(MCF) qui ont 3 ans d'ancienneté ou plus.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM enseignants WHERE grade = "MCF" AND anciennete >= 3');
+
+            foreach ($reponse as $value) {
+                //
+                echo '<h4>   grade:'.$value -> grade.', Nom Enseignant:'.$value -> nom_ens.'</h4><br>';
+//
+            }
+            ?>
             <li class="list-group-item"><b>8 -</b> Nom et date de naissance des étudiants masculins nés après 1990.</li>
+            ?>
+            <?php
+            $reponse =  getResult('SELECT * FROM etudiants WHERE sexe = "M" AND date_naiss > "1990"');
+
+            foreach ($reponse as $value) {
+            //
+            echo '<h4>  Numéro:'.$value -> num_etu.',    Nom :'.$value -> nom_etu.',    Date de naissance :'.$value -> date_naiss.', sexe :'.$value -> sexe.' </h4><br>';
+            //
+            }
+            ?>
+
             <li class="list-group-item"><b>9 -</b> Lignes de la table notes correspondant à une note inconnue.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM notes WHERE note IS NULL ');
+
+            foreach ($reponse as $value) {
+                //
+                echo '<h4>  Numéro:'.$value -> num_etu.',    Note :'.$value -> note.' </h4><br>';
+                //
+            }
+            ?>
+
             <li class="list-group-item"><b>10 -</b> Nom des enseignants professeurs(PR) ou associés(ASS), en utilisant l'opérateur IN.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM enseignants WHERE grade = "MCF" AND anciennete >= 3');
+
+            foreach ($reponse as $value) {
+
+                echo '<h4>   grade:'.$value -> grade.', Nom Enseignant:'.$value -> nom_ens.'</h4><br>';
+            }
+            ?>
+
             <li class="list-group-item"><b>11 -</b> Nom des enseignants dont le nom ou le prénom contiennent un J.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM enseignants WHERE nom_ens LIKE "%J%"');
+
+            foreach ($reponse as $value) {
+
+                echo '<h4>   grade:'.$value -> grade.', Nom Enseignant:'.$value -> nom_ens.'</h4><br>';
+            }
+            ?>
+
             <li class="list-group-item"><b>12 -</b> Nom et date de naissance des étudiants nés en 1990.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM etudiants WHERE date_naiss LIKE "%1990%"');
+
+            foreach ($reponse as $value) {
+
+                echo '<h4> Nom :'.$value -> nom_etu.', Date de naissance :'.$value -> date_naiss.'</h4><br>';
+            }
+            ?>
+
             <li class="list-group-item"><b>13 -</b> Nom et âge (en années) des étudiants de 23 ans ou plus.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM etudiants WHERE (CURRENT_DATE - date_naiss) > 23');
+            // il manque ici un AS pour pouvoir afficher le resultat du calcul de l'Age.
+
+            foreach ($reponse as $value) {
+
+                echo '<h4>   Nom:'.$value -> nom_etu.'</h4><br>';
+            }
+            ?>
+
+
         </ul>
         <hr>
         <h2 class="title" ><b>2 - Jointures</b></h2>
         <hr>
         <ul class="list-group">
             <li class="list-group-item"><b>1 -</b> Notes obtenues par l'étudiant Dupont, Charles.</li>
+            <?php
+            $reponse =  getResult('SELECT Dupont, Charles FROM etudiants');
+
+            foreach ($reponse as $value) {
+
+                echo '<h4>   note:'.$value -> note.'</h4><br>';
+            }
+            ?>
+
+
             <li class="list-group-item"><b>2 -</b> Note obtenue par l'étudiant Dupont, Charles en G.P.A.O.</li>
+            <?php
+            $reponse =  getResult('SELECT Dupont, Charles FROM etudiants JOIN matieres SELECT');
+
+            foreach ($reponse as $value) {
+
+                echo '<h4>   note:'.$value -> note.'</h4><br>';
+            }
+            ?>
+
+
             <li class="list-group-item"><b>3 -</b> Nom et date de naissance des étudiants plus jeunes(en années) que l'étudiant Dupont, Charles.</li>
             <li class="list-group-item"><b>4 -</b> Nom des étudiants ayant eu la moyenne dans une des matières enseignées par Simon, Etienne.</li>
             <li class="list-group-item"><b>5 -</b> Nom des étudiants qui ont eu une note dans en "Logique" inférieure à celle de "Statistiues".</li>
