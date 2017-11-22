@@ -14,7 +14,11 @@
         <div class="jumbotron">
             <h1>Révisions SQL</h1>
             <h2>Consignes pour réaliser les exercices</h2>
+            <?php
+            include('connection.php');
+            ?>
             <p>* Créer un fichier index.php et un fichier connexion php contenant une fonction GetResult effectuant une requète SELECT prenant en paramètre une variable $result </p>
+
             <p>* Pour chaque question, il s'agit de trouver la requête SQL permettant d'afficher le résultat énoncé.</p>
             <p>* Pour chaque question, créer une variable “$result” dans laquelle vous stockerez votre
                 requête afin d'executer la fonction GetResult </p>
