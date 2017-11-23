@@ -24,32 +24,37 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+            <state relative-caret-position="1653">
+              <caret line="218" column="82" lean-forward="false" selection-start-line="218" selection-start-column="82" selection-end-line="218" selection-end-column="82" />
               <folding>
-                <marker date="1511359158000" expanded="true" signature="1160:3492" ph="..." />
-                <marker date="1511359158000" expanded="true" signature="1337:1360" ph="SELECT * FRO... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="1337:1656" ph="SELECT * FRO... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="1791:1841" ph="SELECT nom_e... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="2219:2255" ph="SELECT * FRO... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="2219:2259" ph="SELECT * FRO... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="2697:2739" ph="SELECT * FRO... enseignants" />
-                <marker date="1511359158000" expanded="true" signature="3105:3162" ph="SELECT * FRO... enseignants" />
-                <marker date="1511359158000" expanded="true" signature="3564:3642" ph="SELECT * FRO... enseignants" />
-                <marker date="1511359158000" expanded="true" signature="4048:4113" ph="SELECT * FRO... enseignants" />
-                <marker date="1511359158000" expanded="true" signature="4505:4569" ph="SELECT * FRO... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="5016:5054" ph="SELECT * FRO... notes" />
-                <marker date="1511359158000" expanded="true" signature="5462:5527" ph="SELECT * FRO... enseignants" />
-                <marker date="1511359158000" expanded="true" signature="5883:5930" ph="SELECT * FRO... enseignants" />
-                <marker date="1511359158000" expanded="true" signature="5883:5933" ph="SELECT * FRO... enseignants" />
-                <marker date="1511359158000" expanded="true" signature="6278:6332" ph="SELECT * FRO... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="6687:6749" ph="SELECT * FRO... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="7107:7179" ph="..." />
-                <marker date="1511359158000" expanded="true" signature="7265:7302" ph="SELECT * FRO... enseignants" />
-                <marker date="1511359158000" expanded="true" signature="7611:7669" ph="SELECT Dupon... etudiants" />
-                <marker date="1511359158000" expanded="true" signature="8641:8961" ph="..." />
-                <marker date="1511359158000" expanded="true" signature="9605:9747" ph="..." />
-                <marker date="1511359158000" expanded="true" signature="9812:10415" ph="..." />
+                <marker date="1511364657000" expanded="true" signature="1160:3492" ph="..." />
+                <marker date="1511364657000" expanded="true" signature="1337:1360" ph="SELECT * FRO... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="1337:1656" ph="SELECT * FRO... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="1791:1841" ph="SELECT nom_e... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="2219:2255" ph="SELECT * FRO... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="2219:2259" ph="SELECT * FRO... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="2697:2739" ph="SELECT * FRO... enseignants" />
+                <marker date="1511364657000" expanded="true" signature="3105:3162" ph="SELECT * FRO... enseignants" />
+                <marker date="1511364657000" expanded="true" signature="3564:3642" ph="SELECT * FRO... enseignants" />
+                <marker date="1511364657000" expanded="true" signature="4048:4113" ph="SELECT * FRO... enseignants" />
+                <marker date="1511364657000" expanded="true" signature="4505:4569" ph="SELECT * FRO... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="5016:5054" ph="SELECT * FRO... notes" />
+                <marker date="1511364657000" expanded="true" signature="5462:5527" ph="SELECT * FRO... enseignants" />
+                <marker date="1511364657000" expanded="true" signature="5883:5930" ph="SELECT * FRO... enseignants" />
+                <marker date="1511364657000" expanded="true" signature="5883:5933" ph="SELECT * FRO... enseignants" />
+                <marker date="1511364657000" expanded="true" signature="6278:6332" ph="SELECT * FRO... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="6687:6749" ph="SELECT * FRO... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="7107:7179" ph="..." />
+                <marker date="1511364657000" expanded="true" signature="7265:7279" ph="SELECT * FRO... enseignants" />
+                <marker date="1511364657000" expanded="true" signature="7265:7330" ph="SELECT * FRO... notes" />
+                <marker date="1511364657000" expanded="true" signature="7667:7787" ph="SELECT DISTI... matieres" />
+                <marker date="1511364657000" expanded="true" signature="8173:8220" ph="SELECT * FRO... etudiants" />
+                <marker date="1511364657000" expanded="true" signature="8610:8690" ph="SELECT DISTI... matieres" />
+                <marker date="1511364657000" expanded="true" signature="9189:9298" ph="SELECT matie... Table1" />
+                <marker date="1511364657000" expanded="true" signature="9302:9365" ph="SELECT Table... Table1JoinTable2" />
+                <marker date="1511364657000" expanded="true" signature="9918:10238" ph="..." />
+                <marker date="1511364657000" expanded="true" signature="10882:11024" ph="..." />
+                <marker date="1511364657000" expanded="true" signature="11089:11692" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,9 +102,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
-    <option name="y" value="-397" />
+    <option name="y" value="-420" />
     <option name="width" value="1920" />
-    <option name="height" value="1006" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -138,6 +143,7 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,15 +230,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511339314518</updated>
-      <workItem from="1511339316847" duration="16192000" />
+      <workItem from="1511339316847" duration="22064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16192000" />
+    <option name="totallyTimeSpent" value="22064000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-397" width="1920" height="1006" extended-state="6" />
+    <frame x="1280" y="-420" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12034079" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -298,32 +304,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        <state relative-caret-position="1653">
+          <caret line="218" column="82" lean-forward="false" selection-start-line="218" selection-start-column="82" selection-end-line="218" selection-end-column="82" />
           <folding>
-            <marker date="1511359158000" expanded="true" signature="1160:3492" ph="..." />
-            <marker date="1511359158000" expanded="true" signature="1337:1360" ph="SELECT * FRO... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="1337:1656" ph="SELECT * FRO... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="1791:1841" ph="SELECT nom_e... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="2219:2255" ph="SELECT * FRO... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="2219:2259" ph="SELECT * FRO... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="2697:2739" ph="SELECT * FRO... enseignants" />
-            <marker date="1511359158000" expanded="true" signature="3105:3162" ph="SELECT * FRO... enseignants" />
-            <marker date="1511359158000" expanded="true" signature="3564:3642" ph="SELECT * FRO... enseignants" />
-            <marker date="1511359158000" expanded="true" signature="4048:4113" ph="SELECT * FRO... enseignants" />
-            <marker date="1511359158000" expanded="true" signature="4505:4569" ph="SELECT * FRO... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="5016:5054" ph="SELECT * FRO... notes" />
-            <marker date="1511359158000" expanded="true" signature="5462:5527" ph="SELECT * FRO... enseignants" />
-            <marker date="1511359158000" expanded="true" signature="5883:5930" ph="SELECT * FRO... enseignants" />
-            <marker date="1511359158000" expanded="true" signature="5883:5933" ph="SELECT * FRO... enseignants" />
-            <marker date="1511359158000" expanded="true" signature="6278:6332" ph="SELECT * FRO... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="6687:6749" ph="SELECT * FRO... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="7107:7179" ph="..." />
-            <marker date="1511359158000" expanded="true" signature="7265:7302" ph="SELECT * FRO... enseignants" />
-            <marker date="1511359158000" expanded="true" signature="7611:7669" ph="SELECT Dupon... etudiants" />
-            <marker date="1511359158000" expanded="true" signature="8641:8961" ph="..." />
-            <marker date="1511359158000" expanded="true" signature="9605:9747" ph="..." />
-            <marker date="1511359158000" expanded="true" signature="9812:10415" ph="..." />
+            <marker date="1511364657000" expanded="true" signature="1160:3492" ph="..." />
+            <marker date="1511364657000" expanded="true" signature="1337:1360" ph="SELECT * FRO... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="1337:1656" ph="SELECT * FRO... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="1791:1841" ph="SELECT nom_e... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="2219:2255" ph="SELECT * FRO... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="2219:2259" ph="SELECT * FRO... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="2697:2739" ph="SELECT * FRO... enseignants" />
+            <marker date="1511364657000" expanded="true" signature="3105:3162" ph="SELECT * FRO... enseignants" />
+            <marker date="1511364657000" expanded="true" signature="3564:3642" ph="SELECT * FRO... enseignants" />
+            <marker date="1511364657000" expanded="true" signature="4048:4113" ph="SELECT * FRO... enseignants" />
+            <marker date="1511364657000" expanded="true" signature="4505:4569" ph="SELECT * FRO... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="5016:5054" ph="SELECT * FRO... notes" />
+            <marker date="1511364657000" expanded="true" signature="5462:5527" ph="SELECT * FRO... enseignants" />
+            <marker date="1511364657000" expanded="true" signature="5883:5930" ph="SELECT * FRO... enseignants" />
+            <marker date="1511364657000" expanded="true" signature="5883:5933" ph="SELECT * FRO... enseignants" />
+            <marker date="1511364657000" expanded="true" signature="6278:6332" ph="SELECT * FRO... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="6687:6749" ph="SELECT * FRO... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="7107:7179" ph="..." />
+            <marker date="1511364657000" expanded="true" signature="7265:7279" ph="SELECT * FRO... enseignants" />
+            <marker date="1511364657000" expanded="true" signature="7265:7330" ph="SELECT * FRO... notes" />
+            <marker date="1511364657000" expanded="true" signature="7667:7787" ph="SELECT DISTI... matieres" />
+            <marker date="1511364657000" expanded="true" signature="8173:8220" ph="SELECT * FRO... etudiants" />
+            <marker date="1511364657000" expanded="true" signature="8610:8690" ph="SELECT DISTI... matieres" />
+            <marker date="1511364657000" expanded="true" signature="9189:9298" ph="SELECT matie... Table1" />
+            <marker date="1511364657000" expanded="true" signature="9302:9365" ph="SELECT Table... Table1JoinTable2" />
+            <marker date="1511364657000" expanded="true" signature="9918:10238" ph="..." />
+            <marker date="1511364657000" expanded="true" signature="10882:11024" ph="..." />
+            <marker date="1511364657000" expanded="true" signature="11089:11692" ph="..." />
           </folding>
         </state>
       </provider>

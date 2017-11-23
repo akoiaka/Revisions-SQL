@@ -174,29 +174,63 @@
         <ul class="list-group">
             <li class="list-group-item"><b>1 -</b> Notes obtenues par l'étudiant Dupont, Charles.</li>
             <?php
-            $reponse =  getResult('SELECT Dupont, Charles FROM etudiants');
+            $reponse =  getResult('SELECT * FROM notes JOIN etudiants WHERE nom_etu LIKE "%CHARLES%"');
 
             foreach ($reponse as $value) {
 
-                echo '<h4>   note:'.$value -> note.'</h4><br>';
+                echo '<h4>   nom: '.$value -> nom_etu.', note:'.$value -> note.'</h4><br>';
             }
             ?>
 
 
             <li class="list-group-item"><b>2 -</b> Note obtenue par l'étudiant Dupont, Charles en G.P.A.O.</li>
             <?php
-            $reponse =  getResult('SELECT Dupont, Charles FROM etudiants JOIN matieres SELECT');
+            $reponse =  getResult('SELECT DISTINCT * FROM matieres JOIN notes  JOIN etudiants WHERE nom_etu LIKE "%CHARLES%" AND  nom_mat LIKE "%G.P.A.O.%"');
 
             foreach ($reponse as $value) {
 
-                echo '<h4>   note:'.$value -> note.'</h4><br>';
+                echo '<h4>   nom: '.$value -> nom_etu.', note:'.$value -> note.'</h4><br>';
             }
-            ?>
+                       ?>
 
 
             <li class="list-group-item"><b>3 -</b> Nom et date de naissance des étudiants plus jeunes(en années) que l'étudiant Dupont, Charles.</li>
+            <?php
+            $reponse =  getResult('SELECT * FROM etudiants WHERE date_naiss > 1991');
+
+            foreach ($reponse as $value) {
+
+                echo '<h4>   nom: '.$value -> nom_etu.', date de naissance:'.$value -> date_naiss.'</h4><br>';
+            }
+            ?>
+
             <li class="list-group-item"><b>4 -</b> Nom des étudiants ayant eu la moyenne dans une des matières enseignées par Simon, Etienne.</li>
+            <?php
+            $reponse =  getResult('SELECT DISTINCT * FROM matieres INNER JOIN notes WHERE num_mat = 4 AND note > 10');
+
+            foreach ($reponse as $value) {
+
+                echo '<h4>   nom: '.$value -> nom_etu.', note:'.$value -> note.'</h4><br>';
+            }
+            ?>
+
             <li class="list-group-item"><b>5 -</b> Nom des étudiants qui ont eu une note dans en "Logique" inférieure à celle de "Statistiues".</li>
+            <?php
+            // on va essayer en creant une 3e table qui combine les 2 précédentes.
+             $reponse =  getResult('CREATE TEMPORARY TABLE matieres1Joinnotes SELECT matieres.id as Table1_id, Table2.id as Table2_id
+FROM Table1
+LEFT JOIN Table2 ON Table1.id = Table2.id 
+ 
+SELECT Table2_id 
+FROM Table1JoinTable2
+WHERE Table1_id IS NULL');
+
+            foreach ($reponse as $value) {
+
+                echo '<h4>   nom: '.$value -> nom_etu.', note:'.$value -> note.'</h4><br>';
+            }
+            ?>
+
             <li class="list-group-item"><b>6 -</b> Nom des étudiants ayant eu une plus mauvaise note en Programmation qu'en Bases de données.</li>
             <li class="list-group-item"><b>7 -</b> Nom et numéro des étudiants n'ayant eu aucune note.</li>
         </ul>
