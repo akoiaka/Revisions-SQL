@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="REV1SQL@localhost" uuid="edfbe75d-1834-4875-ab07-3ecb404df428">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>akoi</user-name>
+      <introspection-schemas>*</introspection-schemas>
+    </data-source>
+    <data-source name="http://localhost:8888/phpmyadmin/db_structure.php?server=1&amp;db=REV1SQL" uuid="a9151135-f5a6-40fc-ab35-785df3beab20">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>akoi</user-name>
+      <introspection-schemas>*:</introspection-schemas>
+    </data-source>
+    <data-source name="REV1SQL@localhost [2]" uuid="ddc2e915-5a78-4575-aff6-d348c6d3169c">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>akoi</user-name>
+    </data-source>
+  </component>
+</project>
